@@ -1,17 +1,15 @@
 const http3 = new easyHttp3();
 
-// const data = http3.get('https://jsonplaceholder.typicode.com/posts');
-
-// data
-// .then(data => console.log(data))
-// .catch(err=> console.log(err));  
+ const data = http3.get('https://jsonplaceholder.typicode.com/posts')
+  .then(data => console.log(data))
+  .catch(err=> console.log(err));  
  
 //User Data
-const data = {
-  name: 'John Doe',
-  username: 'johndoe',
-  email: 'jdoe@gmail.com'
-}
+// const data = {
+//   name: 'John Doe',
+//   username: 'johndoe',
+//   email: 'jdoe@gmail.com'
+// }
 
 //Create User
 // http3.post('https://jsonplaceholder.typicode.com/users', data)
@@ -24,6 +22,6 @@ const data = {
 //   .catch(err => console.log(err));
 
 // Delete User
-http3.delete('https://jsonplaceholder.typicode.com/users/2')
-.then(data => console.log(data))
-.catch(err => console.log(err));
+// http3.delete('https://jsonplaceholder.typicode.com/users/2')
+// .then(data => console.log(data))
+// .catch(err => console.log(err));
