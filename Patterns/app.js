@@ -9,27 +9,40 @@
 // })();
 
 //STANDARD MODULE PATTERN
-// const UICtrl = (function() {
-//   let text = 'Hello World';
+const UICtrl = (function() {
+  let text = 'Hello World';
 
-//   const changeText = function() {
-//     const element = document.querySelector('h1');
-//     element.textContent = text;
-//   }
+  console.log('hello Ji');
+  const changeText = function() {
+    const element = document.querySelector('h1');
+    element.textContent = 'meghani';
+  }
 
-//   return {
-//     callChangeText: function() {
-//       changeText();
-//       // console.log(text);
-//     }
-//   }
-// })();
+  changeText();
+
+  return {
+    callChangeText: function() {
+      changeText();
+       console.log(text);
+    }
+  }
+
+   
+})();
 
 var myObj = {
   myFunction: function () { console.log('test'); }
 };
 
-myObj.myFunction();
+
+// const UICtrl1 = (function(){
+//   {
+//     console.log('hello');
+
+//   }
+// })();
+
+// myObj.myFunction();
 
 // UICtrl.callChangeText();
 // // UICtrl.changeText();
